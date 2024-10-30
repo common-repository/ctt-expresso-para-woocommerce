@@ -1,0 +1,604 @@
+/***** Style Admin *****/
+/* Safari and Chrome */
+@-webkit-keyframes rotating  {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.wc-backbone-modal.wc-order-preview article{
+	display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+}
+
+.wc-backbone-modal.wc-order-preview article .wc-order-preview-table-wrapper{
+	-webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+}
+
+.wc-backbone-modal.wc-order-preview article .wc-order-preview-addresses:not(.cttexpresso){
+	-webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+}
+.wc-backbone-modal.wc-order-preview article .wc-order-preview-addresses.cttexpresso{
+	-webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    box-ordinal-group: 3;
+}
+
+.cepw_textarea_debug{
+    width: 100%;
+    min-height: 300px;
+    resize: vertical;
+}
+
+.cepw_debug_file_content pre{
+    background-color: white;
+    padding: 20px 10px;
+    max-height: 300px;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+.cepw_debug_file_content .header{
+    width: 100%;
+    height: 20px;
+    background: #e2e2e2;
+}
+
+.cepw_debug_file_content .header h4{
+    padding: 0px 10px;
+}
+
+table.cepw_debug{
+    width: 300px;
+}
+
+table.cepw_debug td button{
+    background: #007cba;
+    border-color: #007cba;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+
+    display: inline-block;
+    font-size: 13px;
+    line-height: 2.15384615;
+    min-height: 30px;
+    margin: 0;
+    padding: 0 10px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+
+/*** Extra Information METABOX ***/
+
+#cepw_extraInformation .inside{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+#cepw_extraInformation .forminp{
+    margin-bottom: 20px;
+}
+
+#cepw_extraInformation .submit{
+    padding: 10px 5px;
+    width: 75px;
+    text-align: center;
+    color: #fff;
+    line-height: 1;
+    border-radius: 3px;
+    background: #007cba !important;
+    border-color: #007cba !important;
+    padding: 10px 0px !important;
+    float: none !important;
+}
+
+#cepw_extraInformation .submit .fa{
+    display: none;
+    margin-left: 5px;
+}
+
+#cepw_extraInformation .submit:hover{
+    cursor: pointer;
+    background: #0071a1 !important;
+    border-color: #0071a1 !important;
+}
+
+
+#cepw_extraInformation h3{
+    font-size: 1.1em;
+    margin-top: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ccd0d4;
+}
+
+#cepw_extraInformation h3 .actions{
+    float: right;
+    display: inline-block;
+}
+
+#cepw_extraInformation h3 .actions .remove{
+    display: block;
+    width: 1.618em;
+    height: 1.618em;
+    line-height: 1.618;
+    font-weight: 400;
+    text-indent: -9999px;
+    position: relative;
+    text-decoration: none;
+}
+#cepw_extraInformation h3 .actions .remove::before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    line-height: inherit;
+    vertical-align: baseline;
+    content: "\f057";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #737781;
+    line-height: 1.618;
+    text-indent: 0;
+    text-align: center;
+}
+
+#cepw_extraInformation h3 .actions .remove:hover::before{
+    color: #fd0101;
+}
+
+#cepw_extraInformation .extra_information_fields{
+    clear: both;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#cepw_extraInformation .extra_information_fields:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+#cepw_extraInformation .extra_information_fields label,
+#cepw_extraInformation .extra_information_fields .extra_information_fields_input{
+    line-height: 2;
+    display: block;
+}
+
+#cepw_extraInformation .extra_information_fields .extra_information_fields_input p{
+    margin: 0;
+}
+
+
+.SpecialServices .halfwidth{
+    min-width: 50%;
+}
+
+.SpecialServices .open{
+    display: block !important;
+}
+
+.SpecialServices .forminp .special_service_extra{
+    display: none;
+    margin-left: 30px;
+}
+
+.cepw_extraInformation_form{
+    padding: 0 12px 25px;
+}
+
+.add_more_special_service{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #DF0024;
+    border: 2px solid #DF0024;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+.add_more_special_service:hover,
+.add_more_special_service:active,
+.add_more_special_service:focus{
+    cursor: pointer;
+    color: #DF0024;
+    background-color: #ffffff;
+
+}
+
+
+.preloader{
+    display: none;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: calc(100% + 20px);
+    left: 0;
+    top: -20px;
+}
+
+.preloader .loader{
+    height: 1em;
+    width: 1em;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -.5em;
+    margin-top: -.5em;
+    content: '';
+    -webkit-animation: spin 1s ease-in-out infinite;
+    animation: spin 1s ease-in-out infinite;
+    background: url('../img/loader.svg') center center;
+    background-size: cover;
+    line-height: 1;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(0,0,0,.75);
+    -webkit-animation: rotating .75s linear infinite;
+    -moz-animation: rotating .75s linear infinite;
+    -ms-animation: rotating .75s linear infinite;
+    -o-animation: rotating .75s linear infinite;
+    animation: rotating .75s linear infinite;
+}
+
+.cepw_extraInformation_form.hide{
+    display: none;
+}
+
+
+
+/**** Recolha ****/
+
+.ctt_expresso_recolhas{
+    width: calc(100% - 20px);
+}
+
+.cepw_marcarRecolhas{
+    padding: 20px 0px;
+}
+
+.btn-recolhas {
+    padding: 10px;
+    color: #ffffff;
+    background-color: #DF0024 !important;
+    text-decoration:none;
+    border-radius: 3px;
+    border:none !important;
+}
+
+.btn-recolhas:hover{
+    opacity: .9;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.ctt_expresso_header{
+    background-color: #DF0024;
+    width: 100%;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+.ctt_expresso_header:before,
+.ctt_expresso_header:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.ctt_expresso_header img{
+    float: left;
+}
+
+.ctt_expresso_header span{
+    float: left;
+    line-height: 100px;
+    font-size: 1.5em;
+}
+
+
+.ctt_expresso_recolhas a{
+    text-decoration: none;
+}
+
+.required{
+    color: #DF0024;
+}
+
+
+/*** CTT Expresso Recolhas ***/
+.ctt_expresso_recolhas .wp-list-table .check-column {
+    width: 1px;
+    white-space: nowrap;
+    padding: 1em 1em 1em 1em!important;
+    vertical-align: middle;
+}
+
+.ctt_expresso_recolhas .wp-list-table .column-order_number {
+    width: 20ch;
+}
+
+.ctt_expresso_recolhas .wp-list-table thead th {
+    padding: .75em 1em;
+}
+
+.ctt_expresso_recolhas .wp-list-table .column-order_date, 
+.ctt_expresso_recolhas .wp-list-table .column-order_cepw_option,
+.ctt_expresso_recolhas .wp-list-table .column-order_documents {
+    width: 10ch;
+}
+
+.ctt_expresso_recolhas .wp-list-table thead th.sortable a, 
+.ctt_expresso_recolhas .wp-list-table thead th.sorted a {
+    padding: 0;
+}
+
+.ctt_expresso_recolhas .wp-list-table .column-order_total {
+    width: 8ch;
+    text-align: right;
+}
+.ctt_expresso_recolhas .wp-list-table .column-order_total a span {
+    float: right;
+}
+
+
+.ctt_expresso_recolhas .wp-list-table .column-order_cepw_option{
+    text-align: center;
+}
+
+.ctt_expresso_recolhas .tablenav-pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctt_expresso_recolhas .page-numbers {
+    padding: 5px 10px;
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    border: 1px solid #7e8993;
+    background-color: #fff;
+    margin: 0 2px 0 0;
+}
+
+.ctt_expresso_recolhas .page-numbers.current{
+    color: #a0a5aa!important;
+    border-color: #ddd!important;
+    background: #f7f7f7!important;
+}
+
+.cepw_create_recolha{
+    position: relative;
+    background: #ffff;
+    padding: 10px 20px;
+}
+
+.cepw_create_recolha .info h3{
+    font-size: 1.1em;
+    margin-top: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ccd0d4;
+}
+
+.cepw_create_recolha .info h3 .actions {
+    float: right;
+    display: inline-block;
+}
+.cepw_create_recolha .info .forminp {
+    margin-bottom: 20px;
+}
+
+.cepw_create_recolha .info .forminp .form_group{
+    display: flex;
+    align-items: center;
+    clear: both;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.cepw_create_recolha .info .forminp .form_group label{
+    position: relative;
+    max-width: 100px;
+    width: 20%;
+    padding-right: 25px;
+}
+
+.cepw_create_recolha .info .forminp .form_group.required label:after{
+    content: '*';
+    color: #ff0000;
+    font-size: 1.2em;
+    margin-left: 3px;
+}
+
+.cepw_create_recolha .info .forminp .form_group .field input,
+.cepw_create_recolha .info .forminp .form_group .field select{
+    margin-left: 25px;
+}
+
+.cepw_create_recolha .info .forminp .form_group .field input:not(input[type="checkbox"]):not(input[type="radio"]),
+.cepw_create_recolha .info .forminp .form_group .field select{
+    min-width: 350px;
+    width: 80%;
+}
+
+.cepw_create_recolha .info .forminp .form_group textarea{
+    min-height: 100px;
+    min-width: 500px;
+}
+
+.cepw_create_recolha .info .form_group{
+    color: #000;
+}
+
+.btn_cepw_create_recolha{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #DF0024;
+    border: 2px solid #DF0024;
+    padding: 10px 15px;
+    border-radius: 3px; 
+}
+
+.btn_cepw_create_recolha:hover, .btn_cepw_create_recolha:active, .btn_cepw_create_recolha:focus {
+    cursor: pointer;
+    color: #DF0024;
+    background-color: #ffffff;
+}
+
+.ctt_expresso_recolhas .modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7); 
+    z-index: 10;
+}
+
+.ctt_expresso_recolhas .modal.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctt_expresso_recolhas .modal .modal_wrapper{
+    position: relative;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    max-width: 450px;
+    min-height: 200px;
+    width: 80%;
+    z-index: 999
+}
+
+.ctt_expresso_recolhas .modal .modal_wrapper .modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 25px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.ctt_expresso_recolhas .modal .modal_wrapper .modal-header h4{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.ctt_expresso_recolhas .modal .modal_wrapper .modal-header span.PickUpDate{
+    background-color: #DF0024;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+.ctt_expresso_recolhas .modal .modal_wrapper .modal-content table{
+    width: 100%;
+    margin-top: 25px;
+}
+
+.ctt_expresso_recolhas .modal .modal_wrapper .modal-content table td,
+.ctt_expresso_recolhas .modal .modal_wrapper .modal-content table th{
+    padding: 10px 0px;
+    font-size: 1.2em;
+}
+
+
+
+.ctt_expresso_recolhas .modal .modal_wrapper .modal-content .resultsuccess,
+.ctt_expresso_recolhas .modal .modal_wrapper .modal-content .resultfailure{
+    display: none;
+}
+
+.ctt_expresso_recolhas .modal .modal_wrapper .modal-content .failure{
+    white-space: break-spaces;
+}
+
+.ctt_expresso_recolhas .modal .modal_wrapper .modal-footer{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    width: calc(100% - 30px);
+    padding-top: 5px;
+    margin: auto;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.extra_information_fields span.required{
+    display: inline-block !important;
+}
+
+
+@media screen and (min-width: 601px){
+    #cepw_extraInformation .extra_information_fields label {
+        width: 27%;
+        float: left;
+    }
+    #cepw_extraInformation .extra_information_fields .extra_information_fields_input{
+        width: 70%;
+        margin-left: 3%;
+        float: left;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    #cepw_extraInformation .extra_information_fields label {
+        width: 30%;
+        float: left;
+    }
+}
+
+
